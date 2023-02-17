@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>.
+
+<body>
+    <header>
+        <div class="navbar bg-base-100 w-full px-2 mx-auto shadow-lg rounded-lg  md:px-12 md:max-w-screen-xl ">
+            <div class="flex-1">
+                <a class="btn btn-ghost normal-case text-xl">YourMarket</a>
+            </div>
+            <div class="flex-none">
+                <div class="dropdown dropdown-end">
+                    <label tabindex="0" class="btn btn-ghost btn-circle">
+                        <div class="indicator">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                            <span id="t-product2" class="badge badge-sm indicator-item">0</span>
+                        </div>
+                    </label>
+                    <div tabindex="0" class="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
+                        <div class="card-body">
+                            <span class="font-bold text-lg"><span id="t-product3">0</span> Items</span>
+                            <span class="text-info">Subtotal: $<span id="sub-total">00</span></span>
+                            <div class="card-actions">
+                                <button id="view-card" class="btn btn-primary btn-block">View cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown dropdown-end">
+                    <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                        <div class="w-10 rounded-full">
+                            <img src="https://picsum.photos/seed/picsum/200/300" />
+                        </div>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                        <li>
+                            <a class="justify-between">
+                                Profile
+                                <span class="badge">New</span>
+                            </a>
+                        </li>
+                        <li id="settings"><a>Settings</a></li>
+                        <li id="log-out"><a>Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="mt-8 md:px-12">
+        <section class=" lg:flex ">
+            <div class="left-side w-full lg:w-[70%] grid md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center ">
+
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure><img class="w-full h-40" src="img/coffee.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 id="first-name" class="card-title">Coffe js</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <p>Price: $<span id="first-price">250</span></p>
+                        <p>Quantity: <span id="first-quantity">07</span></p>
+                        <div class="card-actions justify-end">
+                            <button id="first-btn" class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure><img class="w-full h-40" src="img/heart_js.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Heart js</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <p>Price: $<span>200</span></p>
+                        <p>Quantity: <span>10</span></p>
+                        <div class="card-actions justify-end">
+                            <button id="second-btn" class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure><img class="w-full h-40" src="img/panda.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Panda js</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <p>Price: $<span>300</span></p>
+                        <p>Quantity: <span>05</span></p>
+                        <div class="card-actions justify-end">
+                            <button id="third-btn" class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure><img class="w-full h-40" src="img/umbrella.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Umbrella js</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <p>Price: $<span>270</span></p>
+                        <p>Quantity: <span>02</span></p>
+                        <div class="card-actions justify-end">
+                            <button id="forth-btn" class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure><img class="w-full h-40" src="img/vue-js.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Vue js</h2>
+                        <p class="text-violet-800">you can select this card for multiple time</p>
+                        <input type="number" placeholder="Price"
+                            class="input input-bordered input-sm w-full max-w-xs" />
+                        <input type="number" placeholder="Quality"
+                            class="input input-bordered input-sm w-full max-w-xs" />
+
+
+
+                        <div class="card-actions justify-end">
+                            <button id="fifth-btn" class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="right-side w-[98%] lg:w-[27%] mx-auto mt-8 lg:mt-0">
+                <h1 class="text-3xl font-bold text-center underline mb-3">Total Product : <span id="t-product">0</span>
+                </h1>
+
+
+                <div class="">
+                    <table class="table w-full">
+                        <!-- head -->
+                        <thead>
+                            <tr>
+                                <th>.No</th>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                            <!-- row 1 -->
+                            <!-- <tr>
+                                <th>1</th>
+                                <td>Cy Ganderton</td>
+                                <td>Quality Control Specialist</td>
+                                <td>Blue</td>
+                            </tr> -->
+
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">All Products Total:</td>
+                                <td id="all-quantity">00</td>
+                                <td id="all-total">00</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
